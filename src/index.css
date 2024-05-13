@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .btn-addfav{
+  @apply font-bold text-2xl p-4 rounded-2xl bg-slate-400
+} */
+/* html{
+  @apply bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%
+} */
+
+/* html{
+  @apply bg-gradient-to-r from-black900 via-indigo-500 to-black750
+} */
+body {
+  @apply bg-black900
+}
+
+.tableCaption {
+  @apply text-white font-bold text-4xl p-4;
+}
+
+/* .btn {
+  @apply bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500  py-1 px-3 rounded-lg;
+} */
+
+.btn {
+  @apply bg-gradient-to-r from-secondary to-primary hover:from-pink-500 hover:to-yellow-500  py-1 px-3 rounded-lg;
+}
+
+.overlay {
+  @apply fixed inset-0 bg-[#07070793] z-50;
+}
+
+.modal {
+  @apply absolute left-1/2 top-1/2 -translate-y-2/4 -translate-x-2/4 bg-black700 w-6/12;
+}
+
+.form {
+  @apply flex flex-col justify-around items-center gap-6 px-12 py-4 m-2 text-white bg-black700;
+}
+
+.inputStyle {
+  @apply bg-black600 h-16 p-2 rounded-xl w-4/6;
+}
+
+.bgTheme{
+  @apply bg-gradient-to-r from-secondary  via-black900 to-primary
+}
+
+.cover{
+  @apply my-2 mx-20 float-left w-9/12  
+}
+
+@layer base {
+  * {
+    @apply m-0 p-0;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .table-style {
+    background-color: theme(colors.black300);
+    color: white;
+    border-radius: 4px;
+    padding: 0;
+    width: 100%;
+  }
+
+  th {
+    position: sticky;
+    top: 0px;
+    margin: 0 0 0 0;
+    padding: 2rem 0;
+    background-color: theme(colors.black500);
+  }
+
+  tr:nth-child(even) {
+    background-color: theme(colors.black400);
+  }
+
+  tr {
+    border-bottom: 0.5px solid #c0c0c0;
+  }
+
+  td {
+    padding: 1rem;
+    text-align: center;
+  }
+}
