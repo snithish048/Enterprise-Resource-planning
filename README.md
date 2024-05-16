@@ -1,6 +1,6 @@
-Enterprise Resource System
+# Enterprise Resource System
 
-Live Demo : https://erp-system-32eee.web.app/
+### Live Demo : https://erp-system-32eee.web.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -8,3 +8,8 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Project setup
+
+1. Make sure Node.js installed to use npm. [Download here](https://nodejs.org/en/download/package-manager)
+2.    
