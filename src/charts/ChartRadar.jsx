@@ -3,37 +3,37 @@ import { RadarChart, PolarGrid, Legend, PolarAngleAxis, PolarRadiusAxis, Radar }
 export default function ChartRadar() {
   const data = [
     {
-      subject: "Math",
+      subject: "India",
       A: 120,
       B: 110, 
       fullMark: 150,
     },
     {
-      subject: "Chinese",
+      subject: "China",
       A: 98,
       B: 130,
       fullMark: 150,
     },
     {
-      subject: "English",
+      subject: "UK",
       A: 86,
       B: 130,
       fullMark: 150,
     },
     {
-      subject: "Geography",
+      subject: "USA",
       A: 99,
       B: 100,
       fullMark: 150,
     },
     {
-      subject: "Physics",
+      subject: "Japan",
       A: 85,
       B: 90,
       fullMark: 150,
     },
     {
-      subject: "History",
+      subject: "Canada",
       A: 65,
       B: 85,
       fullMark: 150,
@@ -41,22 +41,23 @@ export default function ChartRadar() {
   ];
 
   return (
-    <RadarChart outerRadius={90} width={730} height={250} data={data}>
+    <RadarChart outerRadius={90} width={400} height={250} data={data}>
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" />
       <PolarRadiusAxis angle={30} domain={[0, 150]} />
       <Radar
-        name="Mike"
+        name="2023 sales"
         dataKey="A"
-        stroke="#8884d8"
-        fill="#8884d8"
+        stroke="#03dac5"
+        fill="#03dac5"
+        
         fillOpacity={0.6}
       />
       <Radar
-        name="Lily"
+        name="2024 sales"
         dataKey="B"
-        stroke="#82ca9d"
-        fill="#82ca9d"
+        stroke="#bb86fc"
+        fill="#bb86fc"
         fillOpacity={0.6}
       />
       <Legend />

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { MyContext } from "../context/appContext";
+import close from "../assets/icons/close.svg";
 
 export default function EditModal({ setIsEditForm }) {
   const { formValue, setFormValue, setProductData } = useContext(MyContext);
@@ -36,16 +37,21 @@ export default function EditModal({ setIsEditForm }) {
 
   return (
     <div className="overlay">
-      <div className="modal">
+      <div className="modal ">
         <form
-          className="form"
+          className="form "
           autoComplete="off"
           onChange={(e) => handleChange(e)}
           onSubmit={(e) => handleSubmit(e)}
         >
           <div>
             <h3 className="text-2xl font-medium ">Edit product</h3>
-            <h3 className="inline absolute top-4 right-8" onClick={() => setIsEditForm(false)}>X</h3>
+            <img
+              src={close}
+              alt="Close"
+              className="inline absolute top-4 right-8 h-[2rem]"
+              onClick={() => setIsEditForm(false)}
+            />
           </div>
           <input
             className="inputStyle"
@@ -78,13 +84,14 @@ export default function EditModal({ setIsEditForm }) {
             type="number"
             defaultValue={formValue.stock}
           />
-          <div><button className="btn mx-4" onClick={onDelete}>
-            Delete
-          </button>
-          <button className="btn mx-4" type="submit">
-            Update
-          </button></div>
-          
+          <div className="flex justify-between w-4/6 flex-wrap ">
+            <button className="btn " onClick={onDelete}>
+              Delete
+            </button>
+            <button className="btn mx-4" type="submit">
+              Update
+            </button>
+          </div>
         </form>
       </div>
     </div>

@@ -5,16 +5,20 @@ export default {
 
   theme: {
     screens: {
+      mobile:  {'max': '860px'},
       sm: '480px',
-      md: '768px',
+      md: '860px',
       lg: '976px',
       xl: '1440px',
     },
     extend: {
       colors: {
-        'primary': "#6333FF", 
-        'secondary':"#0EB56F",
+        'primary300': "#bb86fc",
+        'primary': "#cbacec",
+        'secondary':"#03dac5",
         'headline':"#eef5f8",
+        'blackPrimary':"#151515",
+        'blackSecondary':"#242424",
         'grey400': "#778cac",
         'grey600': "#3e4859",
         'black900':"#0C0E0C",

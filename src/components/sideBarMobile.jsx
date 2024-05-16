@@ -5,39 +5,40 @@ import order from "../assets/icons/order.svg";
 import product from "../assets/icons/product.svg";
 import calendar from "../assets/icons/calendar.svg";
 import notification from "../assets/icons/notification.svg";
+import about from "../assets/icons/about.svg";
 
-export default function SideBar() {
+export default function SideBarMobile() {
   return (
     <>
-      <nav className="sideBar mobile:hidden">
+      <nav className="sideBarMobile md:hidden">
         <p>
           <Link to="/">
             {" "}
-            <img className="icon" src={home} alt="Icon" /> Home
+            <img className="h-[2rem]" src={home} alt="Icon" />{" "}
           </Link>
         </p>
         <p>
           <Link to="/orders">
             {" "}
-            <img className="icon" src={order} alt="Icon" /> Orders
+            <img className="h-[2rem]" src={order} alt="Icon" />{" "}
           </Link>
         </p>
         <p>
           <Link to="/products">
             {" "}
-            <img className="icon" src={product} alt="Icon" /> Products
+            <img className="h-[2rem]" src={product} alt="Icon" />{" "}
           </Link>
         </p>
         <p>
           <Link to="/calendar">
             {" "}
-            <img className="icon" src={calendar} alt="Icon" /> Calendar
+            <img className="h-[2rem]" src={calendar} alt="Icon" />{" "}
           </Link>
         </p>
         <p>
           <Link to="/notifications">
             {" "}
-            <img className="icon" src={notification} alt="Icon" /> Notifications
+            <img className="icon" src={notification} alt="Icon" />
           </Link>
         </p>
       </nav>

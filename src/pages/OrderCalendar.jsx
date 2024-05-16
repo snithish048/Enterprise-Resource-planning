@@ -3,8 +3,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import moment from "moment-timezone";
 import { MyContext } from "../context/appContext";
-import { DateTime } from "luxon";
-import { order } from "../data/order";
+import coffee from "../assets/images/coffee.svg";
 
 export default function OrderCalendar() {
   const { orderData } = useContext(MyContext);
@@ -13,6 +12,7 @@ export default function OrderCalendar() {
   const [customerName, setCustomerName] = useState();
   const [orderDate, setOrderDate] = useState();
   const [orderStatus, setOrderStatus] = useState();
+  const [address, setAddress] = useState();
 
   const date = moment(selectedDate).format("YYYY-MM-DD");
   const dateInWords = moment(selectedDate)
@@ -23,63 +23,99 @@ export default function OrderCalendar() {
     setSelectedDate(data);
   };
 
-
-  const setData = ()=>{
+  const setData = () => {
     let newData;
     orderData.map((val, i) => {
-     
       if (val.orderDate === date) {
         newData = val;
-        return newData
+        return newData;
       }
-      
-      if(newData){
-        setOrderId(newData.orderId)
-        setCustomerName(newData.customerName)
-        setOrderStatus(newData.status)
+
+      if (newData) {
+        setOrderId(newData.orderId);
+        setCustomerName(newData.customerName);
+        setOrderStatus(newData.status);
+        setAddress(newData.address);
+      } else {
+        setOrderId();
+        setCustomerName();
+        setOrderStatus();
+        setAddress();
       }
     });
-  }
+  };
 
-  useEffect(function() {
-    setData()
-  }, [selectedDate]);
+  useEffect(
+    function () {
+      setData();
+    },
+    [selectedDate]
+  );
 
+  const titlecontent = ({ date, view }) => {
+    if (view === "month") {
+      const dateObject = new Date(date);
 
-  const titlecontent = (data)=>{
-    const date =  moment(data).format("YYYY-MM-DD")
-    console.log(date.toLocaleDateString())
-    const scheduledOrders = orderData.filter((val, i) => date === val.orderDate)
-    console.log(scheduledOrders)
-  }
+      const year = dateObject.getFullYear();
+
+      const month = (dateObject.getMonth() + 1).toString().padStart(2, "0");
+      const day = dateObject.getDate().toString().padStart(2, "0");
+
+      const formattedDate = `${year}-${month}-${day}`;
+
+      orderData.map((val, i) => {});
+      const scheduledOrders = orderData.filter(
+        (order) => order.orderDate === formattedDate
+      );
+      return (
+        <div className="bg-black750 text-secondary">
+          {scheduledOrders.length > 0 && <p>{scheduledOrders.length} order</p>}
+        </div>
+      );
+    }
+  };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <h1>Calendar with Hardcoded Data</h1>
-      <div style={{ marginBottom: "20px" }}>
-        <Calendar onChange={handleChange} value={selectedDate} timezone="IST" 
-         tileContent = {titlecontent}
+    <div className="cover flex justify-center items-center flex-col bg-black900 mx-[1.5rem] ">
+      <h1 className="tableCaption ">Order Calendar</h1>
+      <div className="mb-[1rem]">
+        <Calendar
+          onChange={handleChange}
+          value={selectedDate}
+          timezone="IST"
+          tileContent={titlecontent}
         />
       </div>
-      <div
-        style={{
-          border: "1px solid #ccc",
-          padding: "10px",
-          borderRadius: "5px",
-          color: "white",
-        }}
-      >
-        <h2>{dateInWords}</h2>
-        <p>{orderId}</p>
-        <p>{customerName}</p>
-        <p>{orderStatus}</p>
+      <div className="text-white  h-fit   rounded-[10px] p-[1rem]">
+        {orderId ? (
+          <div className="flex flex-col ">
+            <p className="font-bold text-[2rem] text-center">
+              Orders on {dateInWords}
+            </p>
+            <p className="font-bold text-[1rem]">
+              {" "}
+              <span className="text-[1.2rem] text-primary300">Name:</span>{" "}
+              {customerName}
+            </p>
+            <p className="font-bold text-[1rem]">
+              <span className="text-[1.2rem] text-primary300">Address:</span>{" "}
+              {address}
+            </p>
+            <p className="font-bold text-[1rem]">
+              <span className="text-[1.2rem] text-primary300">Status:</span>{" "}
+              {orderStatus}
+            </p>
+          </div>
+        ) : (
+          <div className="flex flex-col items-center ">
+            {" "}
+            <img className="h-[5rem] " src={coffee} alt="Icon" />
+            <p className="font-bold text-[2rem] text-center">
+              {" "}
+              Relax!! no orders for {dateInWords}{" "}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

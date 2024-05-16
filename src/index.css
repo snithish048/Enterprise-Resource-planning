@@ -2,30 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .btn-addfav{
-  @apply font-bold text-2xl p-4 rounded-2xl bg-slate-400
-} */
-/* html{
-  @apply bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%
-} */
+@layer base {
+  * {
+    @apply m-0 p-0;
+  }
 
-/* html{
-  @apply bg-gradient-to-r from-black900 via-indigo-500 to-black750
-} */
-body {
-  @apply bg-black900
+  body {
+    @apply bg-blackPrimary;
+  }
+
+  @screen mobile {
+    * {
+      @apply text-[10px];
+    }
+  }
+}
+
+@screen md {
+  .icon {
+    @apply h-[2rem] inline;
+  }
+  .sideBar {
+    @apply float-left flex gap-[4rem] flex-col text-[1.2rem] w-fit h-[90vh] border-r border-black300 text-white bg-black800 px-[1rem] py-[4rem];
+  }
 }
 
 .tableCaption {
-  @apply text-white font-bold text-4xl p-4;
+  @apply text-secondary font-bold text-4xl p-4;
 }
 
-/* .btn {
-  @apply bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500  py-1 px-3 rounded-lg;
-} */
+.tableStyle {
+  @apply text-headline py-[2rem] w-full;
+}
+
+.tableContainer {
+  @apply h-fit overflow-y-scroll w-[90%]  mt-[1rem] mb-[2rem] rounded-[2rem] p-0 border border-grey600;
+}
+
+@screen mobile {
+  .sideBarMobile {
+    @apply float-left  z-[500] flex gap-[8rem] flex-col text-[1.2rem] rounded-r-[20px] w-fit h-[90vh] text-headline bg-black800 py-[2rem] px-[1rem] mt-[1rem];
+  }
+}
 
 .btn {
-  @apply bg-gradient-to-r from-secondary to-primary hover:from-pink-500 hover:to-yellow-500  py-1 px-3 rounded-lg;
+  @apply bg-primary text-black font-bold py-1 px-3 rounded-lg hover:bg-primary300;
 }
 
 .overlay {
@@ -33,42 +54,56 @@ body {
 }
 
 .modal {
-  @apply absolute left-1/2 top-1/2 -translate-y-2/4 -translate-x-2/4 bg-black700 w-6/12;
+  @apply absolute left-1/2 top-1/2 -translate-y-2/4 -translate-x-2/4 bg-black900 w-[40%] border  border-primary rounded-[15px] mobile:w-[80%];
 }
 
 .form {
-  @apply flex flex-col justify-around items-center gap-6 px-12 py-4 m-2 text-white bg-black700;
+  @apply flex flex-col justify-center items-center gap-6 px-12 sticky z-[999] bg-black900 py-4 m-2 text-white;
 }
 
 .inputStyle {
-  @apply bg-black600 h-16 p-2 rounded-xl w-4/6;
+  @apply bg-black900 h-[4rem] p-2 rounded-xl w-[70%] mobile:w-[90%] outline-none text-primary border-primary focus:border-secondary border-[1px] border-solid focus:bg-black800;
 }
 
-.bgTheme{
-  @apply bg-gradient-to-r from-secondary  via-black900 to-primary
+
+.cover {
+  @apply flex justify-around items-center h-[90vh] overflow-scroll mobile:justify-normal flex-col  mx-[1.5rem] py-[1rem];
 }
 
-.cover{
-  @apply my-2 mx-20 float-left w-9/12  
+.react-calendar {
+  @apply bg-black900 text-white rounded-[20px] border-primary font-bold mobile:w-[28rem];
+}
+
+.react-calendar__navigation {
+  @apply bg-primary rounded-[20px] m-2 text-black text-[1.8rem] mobile:text-[2.4rem];
+}
+
+.react-calendar__tile--active {
+  @apply bg-primary;
+}
+
+.dashboard {
+  @apply bg-black750 hover:bg-black  border border-black300 hover:border-[1px] hover:border-l-purple-600 hover:border-t-primary hover:border-b-blue-400 hover:border-r-emerald-500 rounded-[10px] text-headline text-[1rem]  m-[1rem] p-[1rem];
+}
+
+.headerFont {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.thinFont {
+  font-family: "Dancing Script", cursive;
 }
 
 @layer base {
   * {
     @apply m-0 p-0;
   }
-}
 
-@layer utilities {
+  body {
+    @apply bg-black900;
+  }
   ::-webkit-scrollbar {
     display: none;
-  }
-
-  .table-style {
-    background-color: theme(colors.black300);
-    color: white;
-    border-radius: 4px;
-    padding: 0;
-    width: 100%;
   }
 
   th {
@@ -76,19 +111,20 @@ body {
     top: 0px;
     margin: 0 0 0 0;
     padding: 2rem 0;
-    background-color: theme(colors.black500);
-  }
-
-  tr:nth-child(even) {
-    background-color: theme(colors.black400);
-  }
-
-  tr {
-    border-bottom: 0.5px solid #c0c0c0;
+    color: theme(colors.primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: theme(colors.black750);
   }
 
   td {
     padding: 1rem;
     text-align: center;
+    background-color: theme(colors.blackPrimary);
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid theme(colors.grey600);
   }
 }

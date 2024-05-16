@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-
 import { MyContext } from "../context/appContext";
+import close from "../assets/icons/close.svg";
 
 export default function AddModal({ setIsAddForm }) {
   const [id, setId] = useState();
@@ -31,15 +31,16 @@ export default function AddModal({ setIsAddForm }) {
           <form className="form" onSubmit={(e) => handleSubmit(e)}>
             <div>
               <h1 className="text-2xl font-medium ">Add product</h1>{" "}
-              <h1
-                className="inline absolute top-4 right-8"
+              <img
+                src={close}
+                alt="Close"
+                className="inline absolute top-4 right-8 h-[2rem]"
                 onClick={() => setIsAddForm(false)}
-              >
-                X
-              </h1>
+              />
             </div>
             <input
               className="inputStyle"
+              required
               type="text"
               id="name"
               value={name}
@@ -49,6 +50,7 @@ export default function AddModal({ setIsAddForm }) {
 
             <input
               className="inputStyle"
+              required
               type="text"
               id="category"
               value={category}
@@ -58,6 +60,7 @@ export default function AddModal({ setIsAddForm }) {
 
             <input
               className="inputStyle"
+              required
               type="number"
               id="price"
               value={price}
@@ -66,20 +69,25 @@ export default function AddModal({ setIsAddForm }) {
             />
             <input
               className="inputStyle"
+              required
               type="number"
               id="stock"
               value={stock}
               placeholder="Stock"
               onChange={(e) => setStock(e.target.value)}
             />
-
-            <button
-              className="btn text-white w-1/4"
-              onClick={handleSubmit}
-              type="submit"
-            >
-              Update
-            </button>
+            <div className="flex justify-between w-4/6 flex-wrap ">
+              <button className="btn " onClick={handleSubmit} type="submit">
+                Update
+              </button>
+              <button
+                className="btn"
+                onClick={() => setIsAddForm(false)}
+                type="submit"
+              >
+                Cancel
+              </button>
+            </div>
           </form>
         </div>
       </div>
