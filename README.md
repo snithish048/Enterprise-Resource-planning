@@ -113,7 +113,8 @@ In the URL if user try to navigate some other page other than the above mentione
 
 | web view | mobile view|
 |----------|------------|
-|![Screenshot 2024-05-17 133715](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/be3be7aa-f250-49e4-9e04-37b44529a720)|![Screenshot_20240517-134107](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/352de2e7-5d22-4afd-8c77-c866e369383a)|
+|![Screenshot 2024-05-17 133715](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/be3be7aa-f250-49e4-9e04-37b44529a720)|![1000021384](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/fca5fc95-9114-448a-ab80-b9fa29e5ff56)
+|
 
 
 
