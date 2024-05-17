@@ -12,4 +12,8 @@ Currently, two official plugins are available:
 ## Project setup
 
 1. Make sure Node.js installed to use npm. [Download here](https://nodejs.org/en/download/package-manager)
-2.    
+2. Head on to project directory.
+   
+   ```
+   cd Enterprise-Resource-System
+   ``` 
