@@ -31,10 +31,32 @@ npm run dev
 
 ## Screenshots
 
+### Home page - Dashboard
+
 
 ![Screenshot 2024-05-17 133151](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/d6f70d99-c3a9-4d0b-abda-cf87c5f8e8cd)
+
+### Orders Page
+
+  User can view and delete orders.
+
+  
 ![Screenshot 2024-05-17 133347](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/802b1455-2bf0-425c-bcf3-89d1a00d964f)
+
+### Product Page
+
+
+ User can add new product, edit or delete the existing or newly added product.
+
+
 ![Screenshot 2024-05-17 133543](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/b8e7e5d0-4d1e-4626-bd65-35fa3166085d)
+
+### Calendar Page
+
+
+  User can check the orders by clicking on the date. Days with orders will be shown in the calendar 
+
+  
 ![Screenshot 2024-05-17 133604](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/8277d128-4014-4ab5-ad91-68d9b5127d3d)
 ![Screenshot 2024-05-17 133620](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/d3721590-ee30-4592-9eee-4de9408849df)
 ![Screenshot 2024-05-17 133715](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/be3be7aa-f250-49e4-9e04-37b44529a720)
