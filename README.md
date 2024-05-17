@@ -37,7 +37,10 @@ This project is developed using [Vite](https://vitejs.dev/guide/)
 
 User can view the key metrics
 
-![Screenshot 2024-05-17 133151](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/d6f70d99-c3a9-4d0b-abda-cf87c5f8e8cd)
+| web view | mobile view|
+|----------|------------|
+|![Screenshot 2024-05-17 133151](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/d6f70d99-c3a9-4d0b-abda-cf87c5f8e8cd)|![1000021379](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/f445c05a-2690-4e5e-8a86-e459c39d3a21)|
+
 
 
 
@@ -49,8 +52,10 @@ User can view the key metrics
 
   User can view and delete orders.
 
-  
-![Screenshot 2024-05-17 133347](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/802b1455-2bf0-425c-bcf3-89d1a00d964f)
+| web view | mobile view|
+|----------|------------|
+|![Screenshot 2024-05-17 133347](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/802b1455-2bf0-425c-bcf3-89d1a00d964f)|![1000021380](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/4c8673fc-da5a-408b-a436-e9a61e295753)|
+
 
 
 
@@ -62,8 +67,10 @@ User can view the key metrics
 
  User can add new product, edit or delete the existing or newly added product.
 
+| web view | mobile view|
+|----------|------------|
+|![Screenshot 2024-05-17 133543](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/b8e7e5d0-4d1e-4626-bd65-35fa3166085d)|![1000021381](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/832bc432-3c91-4785-b052-583073df4931)|
 
-![Screenshot 2024-05-17 133543](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/b8e7e5d0-4d1e-4626-bd65-35fa3166085d)
 
 
 
@@ -75,8 +82,10 @@ User can view the key metrics
   
   User can check the orders by clicking on the date. Days with orders will be shown in the calendar 
 
-  
-![Screenshot 2024-05-17 133604](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/8277d128-4014-4ab5-ad91-68d9b5127d3d)
+| web view | mobile view|
+|----------|------------|
+|![Screenshot 2024-05-17 133604](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/8277d128-4014-4ab5-ad91-68d9b5127d3d)|![1000021382](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/c658e9a5-82ad-48ae-ab39-83d0464a3bdd)|
+
 
 
 
@@ -85,8 +94,9 @@ User can view the key metrics
 
   URL https://erp-system-32eee.web.app/notifications
 
-  
-![Screenshot 2024-05-17 133620](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/d3721590-ee30-4592-9eee-4de9408849df)
+| web view | mobile view|
+|----------|------------|
+|![Screenshot 2024-05-17 133620](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/d3721590-ee30-4592-9eee-4de9408849df)|![Screenshot_20240517-134107](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/352de2e7-5d22-4afd-8c77-c866e369383a)|
 
 
 
@@ -98,8 +108,12 @@ In the URL if user try to navigate some other page other than the above mentione
   for example: https://erp-system-32eee.web.app/efef 
 
   
-![Screenshot 2024-05-17 133715](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/be3be7aa-f250-49e4-9e04-37b44529a720)
 
+
+
+| web view | mobile view|
+|----------|------------|
+|![Screenshot 2024-05-17 133715](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/be3be7aa-f250-49e4-9e04-37b44529a720)|![Screenshot_20240517-134107](https://github.com/snithish048/Enterprise-Resource-planning/assets/56190555/352de2e7-5d22-4afd-8c77-c866e369383a)|
 
 
 
