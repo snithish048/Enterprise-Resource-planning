@@ -1,6 +1,6 @@
 # Enterprise Resource System
 
-### Live Demo : https://erp-system-32eee.web.app/
+## Live Demo : https://erp-system-32eee.web.app/
 
 This project is developed using [Vite](https://vitejs.dev/guide/)
 
