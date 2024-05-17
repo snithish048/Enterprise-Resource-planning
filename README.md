@@ -2,18 +2,29 @@
 
 ### Live Demo : https://erp-system-32eee.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Project setup
 
 1. Make sure Node.js installed to use npm. [Download here](https://nodejs.org/en/download/package-manager)
-2. Head on to project directory.
-   
-   ```
-   cd Enterprise-Resource-System
-   ``` 
+
+2. Clone the repository.
+```
+git clone https://github.com/snithish048/Enterprise-Resource-planning.git
+```
+3. Navigate to the project directory.
+```
+cd Enterprise-Resource-planning
+```
+4. Install npm on the project directory.
+```
+npm install 
+```
+5. Run the application:
+```
+npm run dev
+```
+6. When the application started running a local host link will be displayed on the terminal.
+  Open the link in the browser to view the application.
+
+
